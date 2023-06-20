@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+header h1{
+    color: #263c97;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 400;
+}
+header nav a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 200;
+    color: #263c97;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.banner{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url("tech-gadgets.jpg");
+}
+.banner h1{
+    color: #fff;
+    font-size: 75px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.Card_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.Card_container .title{
+    font-size: 35px;
+    font-weight: 50px;
+    margin: 20px 0px;
+}
+.Card-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+}
+.card{
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+       padding: 20px;
+       cursor: pointer;
+}
+.Card:hover{
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.8);
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.card h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+.card h4{
+    color: chocolate;
+    font-size: 15px;
+    font-weight: 500;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+footer p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.Box{
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+}
+ .box_1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0px;
+}
+ .box_1 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid chocolate;
+}
+.box_1 button{
+   border-radius: 15px;
+   width: 100px;
+   background-color: #fff;
+   border: 1px solid chocolate;
+   cursor: pointer;
+}
+.box_1 button:hover{
+    color: chocolate;
+}
+.box_2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        gap: 20px;
+}
+.box_2 h1{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 25px;
+    font-weight: 300;
+    color: darkorange;
+}
+.box_2 p{
+   font-size: 17px;
+   font-weight: 100;
+   font-style: italic;
+}
+.box_2 small{
+    width: 100%;
+    font-size: 15px;
+    text-align: right;
+    color: chocolate;
+    font-weight: 500;
+}
+header nav img{
+    display: none;
+}
+
+
+@media(max-width:750px){
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+}
+@media(max-width:650px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    header nav a{
+        display: none;
+    }
+    header nav img{
+        display: flex;
+        cursor: pointer;
+    }
+}
+@media(max-width:450px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    header nav a{
+        display: none;
+    }
+    header nav img{
+        display: flex;
+        cursor: pointer;
+    }
+}
